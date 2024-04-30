@@ -1,0 +1,30 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import Categories from './components/Categories';
+import ProductCard from './components/ProductCard';
+import './App.css';
+
+const App = () => {
+  return (
+    <div className="App">
+      <Navbar />
+      <div className="container">
+        <Categories />
+        <main>
+          <ProductCard
+            name="Headphone"
+            image="product1.jpg"
+            description="Buy it as early as possible."
+            price="4999"
+          />
+          {/* Add more ProductCard components as needed */}
+        </main>
+      </div>
+      <footer>
+        <p>&copy; 2024 My Store. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
